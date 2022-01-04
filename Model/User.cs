@@ -1,6 +1,6 @@
 ﻿namespace JSONMinMax
 {
-    public class Employee
+    public class User
     {
         public string login { get; set; }
         public string id { get; set; }
