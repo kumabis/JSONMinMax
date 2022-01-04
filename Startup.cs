@@ -1,3 +1,5 @@
+using JSONMinMax.IServices;
+using JSONMinMax.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -19,6 +21,7 @@ namespace JSONMinMax
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddScoped<IResultService, ResultService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
